@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import '@vkontakte/vkui/dist/vkui.css'
 
-import { AppPanelsIds, RandomGamePanel } from './core/panels'
-import { FavoriteListPanel } from './core/panels/FavoriteListPanel'
+import {
+    AppPanelsIds,
+    RandomGamePanel,
+    FavoriteListPanel,
+    ProfilePanel,
+} from './core/panels'
 import { Tabbar, Epic, View, TabbarItem } from '@vkontakte/vkui'
 import { IconsAdapter } from './shared/components'
 
@@ -11,7 +15,15 @@ const App = () => {
         AppPanelsIds.RandomGame
     )
 
-    const handleChangeActiveStory = () => {}
+    const handleChangeActiveStory = useCallback(
+        (e: React.MouseEvent<HTMLElement>) => {
+            if (e?.currentTarget?.dataset?.story) {
+                const story = e.currentTarget.dataset.story
+                setActiveStory(story as AppPanelsIds)
+            }
+        },
+        []
+    )
 
     return (
         <Epic
@@ -56,6 +68,9 @@ const App = () => {
                 activePanel={AppPanelsIds.RandomGame}
             >
                 <RandomGamePanel id={AppPanelsIds.RandomGame} />
+            </View>
+            <View id={AppPanelsIds.Profile} activePanel={AppPanelsIds.Profile}>
+                <ProfilePanel id={AppPanelsIds.Profile} />
             </View>
         </Epic>
     )

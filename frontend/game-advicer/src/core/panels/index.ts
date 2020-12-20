@@ -1,3 +1,5 @@
 export * from './RandomGamePanel'
+export * from './FavoriteListPanel'
+export * from './ProfilePanel'
 export * from './panels.const'
 export * from './panels.model'
