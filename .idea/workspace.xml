@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97d624b3-f929-4fd7-8502-7d497e1d4ece" name="Default Changelist" comment="">
+    <list default="true" id="97d624b3-f929-4fd7-8502-7d497e1d4ece" name="Default Changelist" comment="epic_panel: Создал компонент IconsAdapter для инверсии зависимостей при использовании иконок, а также создал основу для реализации навигации через epic панель">
+      <change afterPath="$PROJECT_DIR$/frontend/game-advicer/src/core/panels/FavoriteListPanel/FavoriteListPanel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/game-advicer/src/core/panels/FavoriteListPanel/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/game-advicer/src/core/panels/panels.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/game-advicer/src/shared/components/IconsAdapter/IconsAdapter.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/game-advicer/src/shared/components/IconsAdapter/IconsAdapter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/game-advicer/src/shared/components/IconsAdapter/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/game-advicer/src/shared/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/game-advicer/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/game-advicer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/game-advicer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/game-advicer/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/game-advicer/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/game-advicer/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/game-advicer/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/game-advicer/src/core/panels/RandomGamePanel/RandomGamePanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/game-advicer/src/core/panels/RandomGamePanel/RandomGamePanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/game-advicer/src/core/panels/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/game-advicer/src/core/panels/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +35,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/game-advice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\User\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="C:\Users\User\WebstormProjects\game-advice\frontend\game-advice\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\User\WebstormProjects\game-advicer\frontend\game-advicer\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -54,6 +67,7 @@
       <workItem from="1608453386909" duration="6443000" />
       <workItem from="1608467932957" duration="675000" />
       <workItem from="1608468644158" duration="538000" />
+      <workItem from="1608469244992" duration="1866000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1608468227250</created>
@@ -62,7 +76,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608468227250</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Изменил название папок проекта">
+      <created>1608469312061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608469312061</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Изменил название папок проекта">
+      <created>1608469369355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608469369355</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,7 +98,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Изменил название папок проекта" />
+    <MESSAGE value="epic_panel: Создал компонент IconsAdapter для инверсии зависимостей при использовании иконок, а также создал основу для реализации навигации через epic панель" />
+    <option name="LAST_COMMIT_MESSAGE" value="epic_panel: Создал компонент IconsAdapter для инверсии зависимостей при использовании иконок, а также создал основу для реализации навигации через epic панель" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
