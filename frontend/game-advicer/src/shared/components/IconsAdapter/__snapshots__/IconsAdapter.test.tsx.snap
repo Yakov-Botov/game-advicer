@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Рендеринг IconsAdapter компонента 1`] = `
+<div>
+  <div
+    class="Icon Icon--28 Icon--w-28 Icon--h-28 Icon--like_outline_28 "
+    style="width: 28px; height: 28px;"
+  >
+    <svg
+      height="28"
+      style="display: block;"
+      viewBox="0 0 28 28"
+      width="28"
+    >
+      <use
+        style="fill: currentColor;"
+        xlink:href="#like_outline_28"
+      />
+    </svg>
+  </div>
+</div>
+`;
