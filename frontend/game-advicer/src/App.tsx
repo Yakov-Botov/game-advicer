@@ -26,8 +26,10 @@ export const App = React.memo(() => {
         []
     )
 
+    /** TODO: реализовать переключение темы по кнопке */
+    /** TODO: реализовать вывод уведомлений (ошибки, предупреждения) */
+
     return (
-        <main>
             <ConfigProvider scheme="space_gray">
                 <Epic
                     activeStory={activeStory}
@@ -41,7 +43,7 @@ export const App = React.memo(() => {
                                 data-story={AppPanelsIds.FavoriteList}
                                 text="Понравившиеся"
                             >
-                                <IconsAdapter iconType={'Icon28LikeOutline'} />
+                                <IconsAdapter iconType={'IconLikeOutline'} />
                             </TabbarItem>
                             <TabbarItem
                                 onClick={handleChangeActiveStory}
@@ -51,7 +53,7 @@ export const App = React.memo(() => {
                                 data-story={AppPanelsIds.RandomGame}
                                 text="Случайная игра"
                             >
-                                <IconsAdapter iconType={'Icon28GameOutline'} />
+                                <IconsAdapter iconType={'IconGameOutline'} />
                             </TabbarItem>
                             <TabbarItem
                                 onClick={handleChangeActiveStory}
@@ -60,7 +62,7 @@ export const App = React.memo(() => {
                                 text="Профиль"
                             >
                                 <IconsAdapter
-                                    iconType={'Icon28UserCircleOutline'}
+                                    iconType={'IconUserCircleOutline'}
                                 />
                             </TabbarItem>
                         </Tabbar>
@@ -86,6 +88,5 @@ export const App = React.memo(() => {
                     </View>
                 </Epic>
             </ConfigProvider>
-        </main>
     )
 })

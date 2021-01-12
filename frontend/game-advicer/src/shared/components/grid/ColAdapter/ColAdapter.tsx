@@ -3,7 +3,7 @@ import { Col, ColProps } from 'react-flexbox-grid'
 
 type ColAdapterProps = ColProps
 
-/** DI обертка над компонентом row для grid приложения  */
+/** Декоратор над компонентом Col для системы grid приложения */
 export const ColAdapter: React.FC<ColAdapterProps> = React.memo((props) => {
     return <Col {...props} />
 })

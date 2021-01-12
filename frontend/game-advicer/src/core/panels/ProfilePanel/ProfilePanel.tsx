@@ -1,12 +1,20 @@
 import React from 'react'
-import {Cell, Panel, PanelHeader} from '@vkontakte/vkui'
+import {
+    Group,
+    Panel,
+    PanelHeader,
+    SimpleCell,
+    Switch,
+} from '@vkontakte/vkui'
 import { PanelBaseProps } from '..'
 
-export const ProfilePanel: React.FC<PanelBaseProps> = React.memo(({ id }) => {
-    return (
+/** Панель с информацией о пользователе и настройками приложения */
+export const ProfilePanel: React.FC<PanelBaseProps> = React.memo(({ id }) =>
+    (
         <Panel id={id}>
             <PanelHeader>Профиль пользователя</PanelHeader>
-            <Cell>Профиль пользователя</Cell>
+            <Group>
+                <SimpleCell after={<Switch/>}>Темная тема</SimpleCell>
+            </Group>
         </Panel>
-    )
-})
+    ))
